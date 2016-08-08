@@ -1,0 +1,72 @@
+// To increase specificity
+#content
+
+	// Hide unimportant stuff
+	// ---
+	.list-card
+		.list-card-cover // Cover image when card contains image attachement
+		.badges // Icons that card contains description, comments, ...
+		.list-card-operation // Edit "pencil" icon on hover
+		.list-card-stickers-area // "Funny" stickers
+			display none
+
+
+	// Condense
+	// ---
+	.open-card-composer
+		padding 2px 10px;
+		font-size 12px;
+	.list-wrapper
+		margin 0 3px // Default is 0 5px
+		.list-cards
+			margin 0 1px // Default is 0 3px
+			.list-card
+				margin-bottom 4px; // Default is 6px
+
+	.list-card
+		.list-card-details
+			overflow visible // So labels can overflow on left side
+			clear both // CSS layout magic // TODO: Explain
+			padding 3px 4px 3px 8px
+			font-size: 12px;
+
+		.list-card-labels
+			position absolute
+			left -4px
+			.card-label
+				float none
+				width 8px
+				margin 1px 0
+				display block
+
+		.list-card-title
+			margin-bottom 0
+
+
+	// Members
+	// ---
+	.list-card
+		.list-card-members
+			position absolute
+			right 0; top -3px
+			transform scale(0.7); transform-origin right
+			opacity .15
+			.member
+				margin 0 1px
+
+		&.active-card
+			.list-card-members
+				opacity 1
+
+
+	// Less intrusive aging
+	// ---
+	.aging-level-0
+		opacity 1 !important
+	.aging-level-1
+		opacity .9 !important
+	.aging-level-2
+		opacity .8 !important
+	.aging-level-3
+		opacity .7 !important
+
