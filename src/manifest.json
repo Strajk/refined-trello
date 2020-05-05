@@ -1,6 +1,5 @@
 {
 	"name": "Refined Trello",
-	"version": "1.0.0",
 	"description": "Simplifies the Trello interface and adds useful features",
 	"homepage_url": "https://github.com/strajk/refined-trello",
 	"manifest_version": 2,
@@ -16,10 +15,10 @@
 				"https://trello.com/*"
 			],
 			"js": [
-				"index.js"
+				"content.js"
 			],
 			"css": [
-				"index.css"
+				"content.css"
 			]
 		}
 	]
