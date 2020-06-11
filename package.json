@@ -11,7 +11,7 @@
     "release": "webstore upload --source=dst --auto-publish"
   },
   "devDependencies": {
-    "assets-webpack-plugin": "^3.9.12",
+    "assets-webpack-plugin": "^5.0.0",
     "chrome-webstore-upload-cli": "1.2.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.3",
